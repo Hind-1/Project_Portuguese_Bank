@@ -2,10 +2,10 @@
 
 
 ### Backstory:
-The Portuguese Bank's customers haven't investigated enough for long term deposits, which that leads to revenue decline. To fix the issue, the bank will be identified the customers who have chance to subscribe for long-term deposit. Then, the marketing campaign will be focused on those customers. 
+  The Portuguese Bank's customers haven't investigated enough for long term deposits, which that leads to revenue decline. To fix the issue, the bank will be identified the customers who have chance to subscribe for long-term deposit. Then, the marketing campaign will be focused on those customers. 
 
 ### Data Set Information:
-The data is related to direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, to access if the product (bank term deposit) would be subscribed ('yes') or not ('no') subscribed.
+  The data is related to direct marketing campaigns of a Portuguese banking institution. The marketing campaigns were based on phone calls. Often, more than one contact to the same client was required, to access if the product (bank term deposit) would be subscribed ('yes') or not ('no') subscribed.
 There are two datasets: test.csv with all observations (32950) and 16 inputs including the target feature. 
 
 
@@ -15,7 +15,7 @@ There are two datasets: test.csv with all observations (32950) and 16 inputs inc
 
 
 ### The dataset:
-We obtained the dataset from Kaggle website (Banking Dataset) which targets people who people have chance to subscribe for long-term deposit (yes-no), (structured dataset), containing 16 features and 32,950 observations with extension csv. The data contains the following columns:
+   We obtained the dataset from Kaggle website (Banking Dataset) which targets people who people have chance to subscribe for long-term deposit (yes-no), (structured dataset), containing 16 features and 32,950 observations with extension csv. The data contains the following columns:
 
 
 
@@ -58,7 +58,8 @@ Feature  Feature_Type  Description
 y  binary  has the client subscribed a term deposit? ('yes','no')
 
 ### Citation:
-Banking Dataset Classification | Kaggle
+   Banking Dataset Classification | Kaggle
+   https://www.kaggle.com/rashmiranu/banking-dataset-classification?select=new_test.csv
 
 ### Tools:
 -   The used tool is SQL.
