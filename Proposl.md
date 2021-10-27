@@ -9,12 +9,12 @@ The data is related to direct marketing campaigns of a Portuguese banking instit
 There are two datasets: test.csv with all observations (32950) and 16 inputs including the target feature. 
 
 
-#### Goal: 
+### Goal: 
  The classification goal is to predict if the client will subscribe (yes/no) a term deposit (variable y).
 
 
 
-#### The dataset:
+### The dataset:
 We obtained the dataset from Kaggle website (Banking Dataset) which targets people who people have chance to subscribe for long-term deposit (yes-no), (structured dataset), containing 16 features and 32,950 observations with extension csv. The data contains the following columns:
 Feature	Description
 age	age of a person
@@ -37,10 +37,10 @@ Target variable (desired output):
 Feature	Feature_Type	Description
 y	binary	has the client subscribed a term deposit? ('yes','no')
 
-#### Citation:
+### Citation:
 Banking Dataset Classification | Kaggle
 
-#### Tools:
+### Tools:
 - 	The used tool is SQL.
 -   Python Libraries: Numpy, matplotlib, seaborn, sklearn ,pandas and 
 -   In addition, creating and evaluating classification  Model.
