@@ -21,7 +21,7 @@ We obtained the dataset from Kaggle website (Banking Dataset) which targets peop
 
 
 
-| Feature     | LastName      | City     |
+| Feature     | age      | jop     |
 | ------------- | ------------- | -------- |
 | John          | Test1         | NewYork  |
 | Bob           | Test2         | Toronto  |
