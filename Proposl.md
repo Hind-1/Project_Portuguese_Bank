@@ -45,6 +45,5 @@ Banking Dataset Classification | Kaggle
 -   Python Libraries: Numpy, matplotlib, seaborn, sklearn ,pandas and 
 -   In addition, creating and evaluating classification  Model.
 
-![image](https://user-images.githubusercontent.com/72619886/139134922-5ff9bc0e-c2ea-45c4-b0c1-3ff1e0f9e387.png)
 
 
