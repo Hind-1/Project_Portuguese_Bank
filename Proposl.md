@@ -20,11 +20,8 @@ We obtained the dataset from Kaggle website (Banking Dataset) which targets peop
 
 
 
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 | 12 | 13 | 
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |--- | --- | --- | --- |
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
-
-Feature  Description
+- Feature  
+Description
 age  age of a person
 job  type of job ('admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed','services','student','technician','unemployed','unknown')
 marital  marital status ('divorced','married','single','unknown'; note: 'divorced' means divorced or widowed)
