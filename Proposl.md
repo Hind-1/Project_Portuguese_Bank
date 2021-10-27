@@ -20,12 +20,9 @@ We obtained the dataset from Kaggle website (Banking Dataset) which targets peop
 
 
 
-
-| Feature       | age           | jop      | marital  | education |
-
-| ------------- | ------------- | -------- | --------- | --------- |
-| John          | Test1         | NewYork   | jsdjds.  | dwjkeh;wei |
-
+Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11 | 12 | 13 | 
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |--- | --- | --- | --- |
+Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269
 
 Feature  Description
 age  age of a person
