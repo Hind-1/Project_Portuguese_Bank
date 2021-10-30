@@ -58,8 +58,10 @@ Feature  Feature_Type  Description
 y  binary  has the client subscribed a term deposit? ('yes','no')
 
 ## Citation:
-   Banking Dataset Classification | Kaggle
+   Banking Dataset Classification | Kaggle:
    https://www.kaggle.com/rashmiranu/banking-dataset-classification?select=new_test.csv
+   Additional dataset:
+   https://www.kaggle.com/berkayalan/bank-marketing-data-set
 
 ## Tools:
 -   The used tool is SQL.
