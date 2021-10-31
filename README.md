@@ -20,7 +20,8 @@ There are two datasets: test.csv with all observations (32950) and 16 inputs inc
 
 
 
-## Feature Description
+- Feature  
+Description
 - age  
 age of a person
 - job  
@@ -57,12 +58,12 @@ Feature  Feature_Type  Description
 y  binary  has the client subscribed a term deposit? ('yes','no')
 
 ## Citation:
-   Banking Dataset Classification | Kaggle
-   https://www.kaggle.com/rashmiranu/banking-dataset-classification?select=new_test.csv      
+   Banking Dataset Classification | Kaggle:
+   https://www.kaggle.com/rashmiranu/banking-dataset-classification?select=new_test.csv    
    Additional dataset:
-   https://www.kaggle.com/psvishnu/bank-direct-marketing
+   https://www.kaggle.com/berkayalan/bank-marketing-data-set
 
 ## Tools:
 -   The used tool is SQL.
--   Python Libraries: Numpy, matplotlib, seaborn, sklearn ,pandas.
+-   Python Libraries: Numpy, matplotlib, seaborn, sklearn ,pandas and 
 -   In addition, creating and evaluating classification  Model.
