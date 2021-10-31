@@ -20,8 +20,7 @@ There are two datasets: test.csv with all observations (32950) and 16 inputs inc
 
 
 
-- Feature  
-Description
+# Feature Description
 - age  
 age of a person
 - job  
