@@ -17,10 +17,6 @@ There are two datasets: test.csv with all observations (32950) and 16 inputs inc
 ## The dataset:
    We obtained the dataset from Kaggle website (Banking Dataset) which targets people who people have chance to subscribe for long-term deposit (yes-no), (structured dataset), containing 16 features and 32,950 observations with extension csv. The data contains the following columns:
 
-
-
-
-## Feature Description
 - age  
 age of a person
 - job  
