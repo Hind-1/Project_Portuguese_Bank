@@ -60,5 +60,4 @@ y  binary  has the client subscribed a term deposit? ('yes','no')
 
 ## Tools:
 -   The used tool is SQL.
--   Python Libraries: Numpy, matplotlib, seaborn, sklearn ,pandas and 
--   In addition, creating and evaluating classification  Model.
+-   Python Libraries: Numpy, matplotlib, seaborn, sklearn ,pandas ,HTML ,CSS. 
