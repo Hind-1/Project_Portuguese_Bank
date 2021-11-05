@@ -1,4 +1,4 @@
-# Project Portuguese Bank(Classification)
+# Bank Marketing using Classification
 
   In statistics, the logistic model (or logit model) is used to model the probability of a certain class or event existing such as pass/fail, win/lose, alive/dead or healthy/sick. This can be extended to model several classes of events.
 
