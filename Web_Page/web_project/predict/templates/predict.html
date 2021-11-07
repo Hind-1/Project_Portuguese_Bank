@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block main %}
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Prediction Results</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h5>Prediction Input:</h5>
+                <div>Age: <span id="1"></span></div>
+                <div>duration: <span id="2"></span></div>
+                <div>campaign: <span id="3"></span></div>
+                <div>pdays: <span id="4"></span></div>
+                <div>previous: <span id="5"></span></div>
+                
+
+
+                <h5 class="pt-3">Prediction Classification:</h5>
+                <div id="prediction"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a class="btn btn-primary" href="/results" role="button">View DB</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ['age', 'duration', 'campaign', 'pdays', 'previous', 'Target',
+       'entrepreneur', 'housemaid', 'management', 'retired', 'services',
+       'student', 'technician', 'unemployed', 'unknown', 'divorced', 'married',
+       'single', 'unknown', 'illiterate', 'unknown', 'no', 'unknown', 'yes',
+       'no', 'unknown', 'yes', 'cellular', 'telephone', 'apr', 'aug', 'dec',
+       'jul', 'jun', 'mar', 'may', 'nov', 'oct', 'sep', 'fri', 'mon', 'thu',
+       'tue', 'wed', 'failure', 'nonexistent', 'success', 'admin', 'basic6y',
+       'basic9y', 'basic4y', 'high_school', 'professional_course',
+       'university_degree', 'blue_collar', 'self_employed'] -->
+<div class="container pt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4">
+
+            <h1>The Portuguese Bank's</h1>
+
+            <form action="" id="post-form">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="age">age</label>
+                    <input type="number" step="0.1" class="form-control" id="age" placeholder="" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">duration</label>
+                    <input type="number" step="0.1" class="form-control" id="duration" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="campaign">campaign</label>
+                    <input type="number" step="0.1" class="form-control" id="campaign" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="pdays">pdays</label>
+                    <input type="number" step="0.1" class="form-control" id="pdays" placeholder="" required>
+                </div>
+                <div class="form-group">
+                    <label for="previous">previous</label>
+                    <input type="number" step="0.1" class="form-control" id="previous" placeholder="" required>
+                </div>
+                
+
+
+                <button type="submit" value="Submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).on('submit', '#post-form',function(e){
+        e.preventDefault();
+        $.ajax({
+            type:'POST',
+            url:'{% url "predict:submit_prediction" %}',
+            data:{
+                age:$('#age').val(),
+                duration:$('#duration').val(),
+                campaign:$('#campaign').val(),
+                pdays :$('#pdays').val(),
+                previous :$('#previous').val(),
+                csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+
+                action: 'post'
+            },
+            success:function(json) {
+                document.forms["post-form"].reset();
+                document.getElementById("prediction").innerHTML = json['result']
+                document.getElementById("1").innerHTML = json['age']
+                document.getElementById("2").innerHTML = json['duration']
+                document.getElementById("3").innerHTML = json['campaign']
+                document.getElementById("4").innerHTML = json['pdays']
+                document.getElementById("5").innerHTML = json['previous']
+    
+            },
+            error : function(xhr,errmsg,err) {
+            }
+        });
+    })
+</script>
+
+{% endblock %}

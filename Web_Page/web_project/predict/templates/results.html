@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div class="container pt-5">
+        <div class="row">
+
+        <h1>Prediction Results</h1>
+
+            <table class="table">
+                <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">age</th>
+                <th scope="col">Job</th>
+                <th scope="col">Marital</th>
+                <th scope="col">Education</th>
+                <th scope="col">Housing</th>
+                <th scope="col">Loan</th>
+                <th scope="col">Contact</th>
+                <th scope="col">Month</th>
+                <th scope="col">Day of week </th>
+                <th scope="col">Duration</th>
+                <th scope="col">Campaign</th>
+                <th scope="col">Pdays</th>
+                <th scope="col">Previous</th>
+                <th scope="col">Poutcome</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                {% for data in dataset %}
+                    <tr>
+                    <th scope="row">{{ data.id }}</th>
+                    <td>{{ data.age }}</td>
+                    <td>{{ data.job }}</td>
+                    <td>{{ data.marital }}</td>
+                    <td>{{ data.education }}</td>
+                    <td>{{ data.housing }}</td>
+                    <td>{{ data.loan }}</td>
+                    <td>{{ data.contact }}</td>
+                    <td>{{ data.month }}</td>
+                    <td>{{ data.day_of_week }}</td>
+                    <td>{{ data.duration }}</td>
+                    <td>{{ data.campaign }}</td>
+                    <td>{{ data.pdays }}</td>
+                    <td>{{ data.previous }}</td>
+                    <td>{{ data.poutcome }}</td>
+                    <td>{{ data.classification }}</td>
+                    </tr>
+                {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
